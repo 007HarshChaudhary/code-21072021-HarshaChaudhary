@@ -6,7 +6,7 @@ const fs = require('fs');
 // importing processed data
 let json_object;
 try {
-    json_object = require('./app.js');    
+    json_object = require('../app.js');    
 } catch (error) {
     console.log(error.message);
     process.exit();
