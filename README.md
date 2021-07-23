@@ -21,6 +21,6 @@
 ---
 
 #### APIs
-1. `http://localhost:8080/patientdata/:pageNo` where pageno >= 1. It will fetch patient's data with 100 entries per page.
-2. `http://localhost:8080/totalOverWeight`. It will fetch total number of over weight people.
+1. GET `http://localhost:8080/patientdata/:pageNo` where pageno >= 1. It will fetch patient's data with 100 entries per page.
+2. GET `http://localhost:8080/totalOverWeight`. It will fetch total number of over weight people.
 
