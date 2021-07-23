@@ -13,5 +13,11 @@
 1. Download the project.
 2. Install the required dependencies.
 3. Use command `node createData.js` to create dummy data. This will create a file `InputData.json`.
-4. Use command `node api.js` to start the server.
+4. Use command `node api.js` to start the server, app will start on port 8080.
+
+---
+
+#### APIs
+1. `http://localhost:8080/patientdata/:pageno` where pageno >= 1. It will fetch patient's data with 100 entries per page.
+2. `http://localhost:8080/totalOverWeight`. It will fetch total number of over weight people.
 
