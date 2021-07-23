@@ -2,7 +2,14 @@ const express = require('express');
 const app = express();
 
 // importing processed array
-const json_object = require('./app.js');
+let json_object;
+try {
+    json_object = require('./app.js');    
+} catch (error) {
+    console.log(error.message);
+    process.exit();
+}
+
 
 // preprocessing array
 const patientData_new = json_object.patientData_new
@@ -52,6 +59,5 @@ app.get('/totalOverWeight', (req, res)=>{
     res.json(patientData_new[totalPatients]);
 });
 
-app.listen(8080);
-
-console.log('Starting listening to port: 8080');
+app.listen(8080, () => console.log(
+    'Server started on http://localhost:8080'));
