@@ -6,6 +6,8 @@
 | Node | https://nodejs.org/en/download/ |
 | TypeScript | npm install -g typescript |
 | Express | npm install express |
+| Mocha | npm install mocha |
+| Chai | npm install chai |
 
 ---
 
@@ -13,7 +15,8 @@
 1. Download the project.
 2. Install the required dependencies.
 3. Use command `node createData.js` to create dummy data. This will create a file `InputData.json`.
-4. Use command `node api.js` to start the server, app will start on port 8080.
+4. Use command `npm run test` to run the test cases.
+5. Use command `node api.js` to start the server, app will start on port 8080.
 
 ---
 
