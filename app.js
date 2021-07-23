@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // reading JSON file and parsing it into an object
-let patientData = JSON.parse(fs.readFileSync('InputData.json', 'utf-8'));
+let patientData = JSON.parse(fs.readFileSync('InputData.json'));
 
 // importing BMI_Category-Health_Risk mapping object
 const HealthRisk = require('./CategoryToRiskMapping.js');
@@ -45,5 +45,3 @@ patientData_new.push(
 // });
 
 module.exports = { patientData_new };
-
-
